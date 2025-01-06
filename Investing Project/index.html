@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header-overlay">
+      <h1>Investment Calculator</h1>
+    </div>
+    <div class="user-inputs">
+      <span class="currency1">$</span
+      ><input
+        type="number"
+        id="starting-amount"
+        placeholder="Starting Amount"
+      />
+
+      <span class="currency2">$</span
+      ><input
+        type="number"
+        id="additional-amount"
+        placeholder="Additional Amount"
+      />
+      <select id="dropDown">
+        <option value="Annually">Annually</option>
+        <option value="Semi-Annually">Semi-Annually</option>
+        <option value="Quarterly">Quarterly</option>
+        <option value="Monthly">Monthly</option>
+        <option value="Bi-Weekly">Bi-Weekly</option>
+        <option value="Weekly">Weekly</option>
+        <option value="Daily">Daily</option>
+      </select>
+
+      <span class="currency3">%</span>
+      <input type="number" id="Rate-Of-Return" placeholder="Return Rate" />
+
+      <input type="number" id="Years" placeholder=" # Years of Growth" />
+    </div>
+    <div class="calculation-button">
+      <button id="button">Calculate</button>
+    </div>
+    <div class="calculation-output">
+      <output id="output"></output>
+    </div>
+    <div class="blue-bottom"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      defer
+    ></script>
+    <script src="GSAP.js"></script>
+    <script src="index.js" defer></script>
+  </body>
+</html>

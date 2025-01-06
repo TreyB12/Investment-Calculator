@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    font-family: "Inter";
+    
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.header-overlay{
+
+flex-wrap: wrap;
+margin: -1.4rem;
+height: 15vh;
+padding-top: 20px;
+color: white;
+background-color: #1D2A44;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+
+}
+
+.user-inputs {
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+flex-direction: column;
+gap: 2rem;
+margin-top: 1.4rem;
+padding-bottom: 2rem;
+padding-top: 2rem;
+background-color: #333333;
+
+
+}
+
+.calculation-button {
+
+display: flex;
+height: 20vh;
+justify-content: center;
+align-items: center;
+position: relative;
+margin-top: 3vh;
+margin-top: 0rem;
+bottom: .1vh;
+background-color: #333333;
+
+
+}
+
+#button {
+    height: 4rem;
+    width: 16rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: transparent;
+    margin-top: -3rem;
+    font-family: "Inter";
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: rgb(221, 221, 221);
+    box-shadow: 5px 5px 10px;
+    transform: scale(1.05);
+}
+
+#button:active {
+    transform: scale(1);
+}
+
+.currency1 {
+    position: absolute;
+    left: 51rem;
+    top: 18vh;
+   color: #999;
+    width: 1%;
+    height: 4%;
+    font-size: 1.5rem;
+    z-index: 1;
+    margin-right: 5px;
+}
+
+#starting-amount {
+    padding-left: 25px;
+    font-size: 1.15rem;
+    border-radius: 5px;
+    border: transparent;
+}
+
+.currency2 {
+    position: absolute;
+    left: 51rem;
+    top: 24.1vh;
+   color: #999;
+    width: 1%;
+    height: 4%;
+    font-size: 1.5rem;
+    z-index: 1;
+    margin-right: 5px;
+
+}
+
+#additional-amount {
+    padding-left: 25px;
+    font-size: 1.15rem;
+    border-radius: 5px;
+    border: transparent;
+}
+
+.currency3 {
+    position: absolute;
+    left: 53.3rem;
+    top: 36.6vh;
+   color: #999;
+    width: 1%;
+    height: 4%;
+    font-size: 1.3rem;
+    z-index: 1;
+    margin-right: 5px;
+}
+
+#Rate-Of-Return {
+    padding-left: 25px;
+    font-size: 1.15rem;
+    width: 8%;
+    border-radius: 5px;
+    border: transparent;
+}
+
+
+
+#Years {
+    
+    font-size: 1.15rem;
+    border-radius: 5px;
+    border: transparent;
+}
+
+
+
+.calculation-output {
+    
+    height: 20.4vh;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1vh;
+    background-color: #4b4b4b;
+    color: white;
+    width: 100%;
+    
+    border-radius: 5px;
+    border: transparent;
+} 
+
+#dropDown {
+    height: 1.65rem;
+    border-radius: 5px;
+    font-family: "Inter";
+
+}
+
+.blue-bottom {
+    height: 14vh;
+    background-color: #1D2A44;
+}
